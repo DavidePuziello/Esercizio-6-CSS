@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  height: 30px;
+  background-color: #292929;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h2 {
+  color: grey;
+  width: 150px;
+  position: absolute;
+  font-size: 20px;
+}
+
+nav ul {
+  float: left;
+  margin-left: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-top: 2px;
+  background-color: #292929;
+}
+
+nav ul li a {
+  position: relative;
+  color: grey;
+  font-size: 18px;
+}
+
+.move {
+  justify-content: flex-end;
+}
+
+.disabled {
+  margin: 2px 0 5px 15px;
+  border: none;
+  background: none;
+  color: grey;
+  cursor: pointer;
+}
+
+.disabled:hover {
+  background-color: #39f;
+  color: #292929;
+  border-radius: 2px;
+}
+
+#flex {
+  display: flex;
+}
+
+#dimension {
+  margin: 3px 0 5px 15px;
+}
+
+#dimension input {
+  width: 200px;
+  height: 80%;
+  border-radius: 5px;
+}
+
+#dimension button {
+  width: 49px;
+  height: 100%;
+}
+
+#dimension button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul ul {
+  position: absolute;
+}
+
+.drop {
+  position: relative;
+  cursor: pointer;
+}
+
+.drop ul li {
+  display: flex;
+  margin-left: -100px;
+  color: black;
+  box-shadow: 0 0 10px;
+  color: #39f;
+  visibility: hidden;
+}
+
+.drop:hover ul li {
+  visibility: visible;
+}
+
+nav ul a:hover {
+  color: #39f;
+  transition: .3s;
+}
+
+label {
+  float: right;
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+  body {
+    background-color: #292929;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  nav div {
+      visibility: hidden;
+  }
+  nav h2 {
+    visibility: visible;
+    color: #39f;
+  }
+  
+}
